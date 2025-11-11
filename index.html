@@ -106,6 +106,32 @@ footer{
 @media(max-width:700px){
   iframe{width:100%!important;height:200px!important}
 }
+
+/* ===== CARROSSEL DAS IMAGENS ===== */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+.carousel::-webkit-scrollbar-thumb {
+  background: var(--laranja);
+  border-radius: 5px;
+}
+.carousel img {
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 2px solid var(--laranja);
+  transition: transform 0.3s;
+}
+.carousel img:hover {
+  transform: scale(1.05);
+}
 </style>
 </head>
 <body>
@@ -116,7 +142,7 @@ footer{
 
 <main>
   <h2 class="manchete">Menino indonésio viraliza nas Redes Sociais após dança em cima de canoa em Festival na Indonésia</h2>
-  <h3 class="subtitulo">Rayyan Arkan Dikha encantou o público com sua energia contagiante durante o tradicional Festival Pacu Jalur.</h3>
+  <h3 class="subtitulo">Rayyan Arkan Dikha encantou o público com sua energia contagiante durante o tradicional Festival Pacu Jalur que acontece na indonésia.</h3>
 
   <p class="lide"><strong>O que, quem, onde e quando:</strong> O menino indonésio <strong>Rayyan Arkan Dikha</strong> viralizou após sua dança em cima de uma canoa durante o <strong>Festival Pacu Jalur</strong>, uma tradicional corrida de barcos que acontece anualmente no <strong>rio Kuantan, em Riau, Indonésia</strong>. O vídeo rapidamente se espalhou pelas redes sociais.</p>
 
@@ -133,7 +159,8 @@ footer{
 
     <p>O fenômeno não ficou restrito à vida real: o personagem ganhou destaque dentro do jogo <strong>Steal a Brainrot (Roube um Brainrot)</strong>, com o nome <strong>Bambu Bambu Sahur</strong>, criado por <strong>Sammy</strong> — conhecido no Roblox como <strong>SpyderSammy</strong>. O personagem se tornou uma febre entre os jogadores, inspirando danças e desafios no universo gamer.</p>
 
-    <div class="videoSection">
+    <!-- 🌟 Carrossel Horizontal das Imagens 🌟 -->
+    <div class="carousel">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsfkJ3nEZ8ku70-6rfvrptInmje-YivmookQ&s" alt="Imagem 1">
       <img src="https://static.wikia.nocookie.net/stealabr/images/8/8e/Caca.png/revision/latest/scale-to-width-down/250?cb=20251018160655" alt="Imagem 2">
       <img src="https://static.wikia.nocookie.net/stealabr/images/5/5e/Aurafarmkid.png/revision/latest/scale-to-width/360?cb=20251018104749" alt="Imagem 3">
